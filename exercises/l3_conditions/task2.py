@@ -1,7 +1,8 @@
 # Write the function body to make the script work without errors
 def full_none(s: str) -> str:
-    pass
-
+    if len(s) > 0:
+        return "FULL"
+    return "NONE"
 
 # Do not change the below's code
 if __name__ == "__main__":
