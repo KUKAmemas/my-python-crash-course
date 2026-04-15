@@ -5,7 +5,14 @@
 # If argument `reverse` is set to `True`, the function
 # must return a list which contains integers in a range [n; 1]
 def fill(n: int, reverse: bool = False) -> list[int]:
-    pass
+    l = []
+    for i in range(1, n + 1):
+        l.append(i)
+    if reverse == True:
+        if n == 0:
+            return n
+        return l[:: -1]
+    return l
 
 
 # Do not change the below's code
@@ -18,4 +25,5 @@ if __name__ == "__main__":
     assert fill(3, True) == [3, 2, 1]
     assert fill(0, True) == 0
     assert fill(4) == [4, 3, 2, 1]
+    # Logic error in 22 and 27 lines.
     assert fill(1) == [1]
