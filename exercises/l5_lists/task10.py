@@ -5,7 +5,8 @@ from typing import Any
 # NOTE: the function must create a new list.
 # Do not modify list `l`.
 def reverse(l: list[Any]) -> list[Any]:
-    pass
+    rev = l[::-1]
+    return rev
 
 
 # Do not change the below's code
