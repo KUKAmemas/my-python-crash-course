@@ -2,7 +2,10 @@
 # string `s` contain vowels (A, E, I, O, U, a, e, i, o, u)
 # and False otherwise
 def contains_vowels(s: str) -> bool:
-    pass
+    for i in s:
+        if i.lower() in "aeoui":
+            return True
+    return False
 
 
 # Do not change the below's code
