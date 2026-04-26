@@ -1,3 +1,4 @@
+
 # Write a function that returns `max(len(s), n)`
 # characters from the middle of the string.
 #
@@ -7,7 +8,10 @@
 #
 # NOTE: use // division to define slice start index
 def middle(s: str, n: int) -> str:
-    pass
+    if len(s) <= n:
+        return s
+    b = (len(s) - n) // 2
+    return s[b:b+n]
 
 
 # Do not change the below's code
