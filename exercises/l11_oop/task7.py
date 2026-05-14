@@ -6,7 +6,10 @@ class Point:
     def __init__(self, x: int, y: int):
         self.x = x
         self.y = y
-
+    def __add__(self, other):
+        new_x = self.x + other.x
+        new_y = self.y + other.y
+        return Point(new_x, new_y)
 
 # Do not change the code below
 if __name__ == "__main__":
